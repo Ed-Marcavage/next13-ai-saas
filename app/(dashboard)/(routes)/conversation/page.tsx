@@ -7,6 +7,7 @@ import { MessageSquare } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 import { formSchema } from "@/constants";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -74,9 +75,17 @@ export default function HomePage() {
                                 )
                                 }
                             />
+                            <Button className="col-span-12 lg:col-span-2 w-full" type="submit" disabled={isLoading} size="icon">
+                                Generate
+                            </Button>
+
+
 
                         </form>
                     </Form>
+                </div>
+                <div className="space-y-4 mt-4">
+                    MESSAGES CONTENT
                 </div>
 
             </div>
