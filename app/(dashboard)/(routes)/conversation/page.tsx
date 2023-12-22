@@ -84,7 +84,7 @@ export default function HomePage() {
                         </form>
                     </Form>
                 </div>
-                <div className="space-y-4 mt-4">
+                <div className="border-8 border-green-600 space-y-4 mt-4">
                     MESSAGES CONTENT
                 </div>
 
